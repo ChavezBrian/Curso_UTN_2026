@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1>My feedback form</h1>
+        
+        <div>
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" name="username" required>
+        </div>
+
+        <div>
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" name="email" required>
+        </div>
+
+        <div>
+            <label for="user_password">Password:</label>
+            <input type="password" id="user_password" name="password" required>
+        </div>
+
+        <div>
+            <span>Please check all the emotions that apply to you:</span>
+            
+            <div>
+                <label for="angry">Angry</label>
+                <input type="checkbox" id="angry" name="emotion" value="1" checked>
+            </div>
+
+            <div>
+                <label for="sad">Sad</label>
+                <input type="checkbox" id="sad" name="emotion" value="2">
+            </div>
+
+            <div>
+                <label for="happy">Happy</label>
+                <input type="checkbox" id="happy" name="emotion" value="3">
+            </div>
+
+            <div>
+                <label for="ambivalent">Ambivalent</label>
+                <input type="checkbox" id="ambivalent" name="emotion" value="4">
+            </div>
+
+        </div>
+
+        <div>
+            <span>How satisfied were you with our service?</span>
+
+            <div>
+                <label>Very satisfied</label>
+                <input type="radio" name="satisfaction" value="1" checked>
+            </div>
+
+            <div>
+                <label>Satisfied</label>
+                <input type="radio" name="satisfaction" value="2">
+            </div>
+
+            <div>
+                <label>Didn't care</label>
+                <input type="radio" name="satisfaction" value="3">
+            </div>
+
+            <div>
+                <label>Dissatisfied</label>
+                <input type="radio" name="satisfaction" value="4">
+            </div>
+
+            <div>
+                <label>Very dissatisfied</label>
+                <input type="radio" name="satisfaction" value="5">
+            </div>
+
+        </div>
+
+        <div>
+            <label for="comments">Futher comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+
+        <div>
+            <label for="photo">Bio photo:</label>
+            <input type="file" id="photo" name="bio_photo" accept="image/*">
+        </div>
+
+        <div>
+            <label>Location visited:
+                <select name="location">
+                    <option value="" selected disabled>Select a location</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Otro pais">Otro pais</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    <form>
+</body>
+</html>

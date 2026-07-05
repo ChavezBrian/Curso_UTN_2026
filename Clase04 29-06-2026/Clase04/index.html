@@ -5,104 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <form>
-        <h1>My feedback form</h1>
-        
-        <div>
-            <label for="user_name">Name:</label>
-            <input type="text" id="user_name" name="username" required>
-        </div>
+    <header>
+        <h1>Ejercicios clase 4</h1>
+    </header>
+    <main>
+        <article>
+            <p>Esto es un articulo introductorio</p>
+        </article>
+        <section>
+            <span>¿Donde esta el obelisco?</span>
 
-        <div>
-            <label for="user_email">Email:</label>
-            <input type="email" id="user_email" name="email" required>
-        </div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3284.018271682019!2d-58.384002538254435!3d-34.603699472841456!2m3!
+                1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sobelisco!5e0!3m2!1ses-419!2sar!4v1783221925561!5m2!1ses-419!2sar" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
 
-        <div>
-            <label for="user_password">Password:</label>
-            <input type="password" id="user_password" name="password" required>
-        </div>
+            <span>Mira a este lindo gatito</span>
 
-        <div>
-            <span>Please check all the emotions that apply to you:</span>
+            <iframe 
+                width="560" height="315" src="https://www.youtube.com/embed/-dTa8gchZfc?si=XNzyqrg7alm8Fo7K" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </section>
+
+        <form>
             
             <div>
-                <label for="angry">Angry</label>
-                <input type="checkbox" id="angry" name="emotion" value="1" checked>
+                <label for="pacient">Nombre del Paciente</label>
+                <input type="text" id="pacient" name="name" required>
             </div>
 
             <div>
-                <label for="sad">Sad</label>
-                <input type="checkbox" id="sad" name="emotion" value="2">
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" name="email" required>
             </div>
 
             <div>
-                <label for="happy">Happy</label>
-                <input type="checkbox" id="happy" name="emotion" value="3">
+                <label for="date">Elija el dia de su turno</label>
+                <input type="date" id="date" name="date" required>
             </div>
 
             <div>
-                <label for="ambivalent">Ambivalent</label>
-                <input type="checkbox" id="ambivalent" name="emotion" value="4">
+               <span>Elija el horario de atencion</span>
+
+               <label for="morning">Mañana</label>
+               <input type="radio" id="morning" name="horario" value="morning" checked>
+
+               <label for="evening">Tarde</label>
+               <input type="radio" id="evening" name="horario" value="evening">
             </div>
 
-        </div>
-
-        <div>
-            <span>How satisfied were you with our service?</span>
-
-            <div>
-                <label>Very satisfied</label>
-                <input type="radio" name="satisfaction" value="1" checked>
-            </div>
-
-            <div>
-                <label>Satisfied</label>
-                <input type="radio" name="satisfaction" value="2">
-            </div>
-
-            <div>
-                <label>Didn't care</label>
-                <input type="radio" name="satisfaction" value="3">
-            </div>
-
-            <div>
-                <label>Dissatisfied</label>
-                <input type="radio" name="satisfaction" value="4">
-            </div>
-
-            <div>
-                <label>Very dissatisfied</label>
-                <input type="radio" name="satisfaction" value="5">
-            </div>
-
-        </div>
-
-        <div>
-            <label for="comments">Futher comments:</label>
-            <textarea id="comments" name="comments"></textarea>
-        </div>
-
-        <div>
-            <label for="photo">Bio photo:</label>
-            <input type="file" id="photo" name="bio_photo" accept="image/*">
-        </div>
-
-        <div>
-            <label>Location visited:
-                <select name="location">
-                    <option value="" selected disabled>Select a location</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Otro pais">Otro pais</option>
-                </select>
-            </label>
-        </div>
-
-        <div>
-            <button type="submit">Submit</button>
-        </div>
-    <form>
+            <button type="submit">Solicitar turno</button>
+           
+        </form>
+    </main>
+    <footer></footer>
 </body>
 </html>
