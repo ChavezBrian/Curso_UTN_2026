@@ -1,0 +1,17 @@
+/* El asterisco (*) selecciona absolutamente TODAS las etiquetas de la web 
+*/ 
+* { 
+margin: 0; 
+padding: 0; 
+box-sizing: border-box; /* Fundamental para que las matemáticas no se 
+rompan */ 
+}
+
+.tarjeta {
+    width: 300px;
+    background-color: red;
+    border: 2px solid black;
+    padding: 2rem;
+    margin: 50px;
+    border-radius: 20px;
+}
