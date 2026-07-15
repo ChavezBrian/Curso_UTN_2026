@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 24px;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 400;
+    margin: 30px 0px 8px;
+}
+
+.navContainer {
+    margin: 32px 0px;
+}
+
+.navbar {
+    display: flex;
+    gap: 8px;
+}
+
+.navLink {
+    font-size: 14px;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 999px;
+    background-color: #0000000d;
+}
+
+.navLink:hover {
+    color: blueviolet;
+    background-color:  #dfe4eb;
+    cursor: pointer;
+}
+
+.firstLink {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border-radius: 999px;
+    font-size: 14px;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    gap: 16px 12px;
+}
+
+.cardLink {
+    padding: 24px;
+    border: 1px solid black;
+}
+
