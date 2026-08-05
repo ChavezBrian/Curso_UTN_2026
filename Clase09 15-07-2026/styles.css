@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.tarjeta-uno {
+    width: 30vh;
+    height: 30vh;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.tarjeta-dos {
+    width: 30vh;
+    height: 30vh;
+    background-color: blueviolet;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-dos:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.35);
+}
+
+.tarjeta-tres {
+    width: 30vh;
+    height: 30vh;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.spinner {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 6px solid #f0f0f0;
+    border-top-color: blue;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
