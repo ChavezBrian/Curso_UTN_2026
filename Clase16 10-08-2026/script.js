@@ -163,5 +163,8 @@ function eliminarProductoPorId(productos, id) {
     }
 }
 
+eliminarProductoPorId(productos, 3)
+console.log(productos)
+
 
 
