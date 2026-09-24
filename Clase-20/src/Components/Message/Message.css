@@ -1,0 +1,69 @@
+/* Fila contenedora: define si se alinea a la izquierda o a la derecha */
+.product-cards-container {
+  display: flex;
+}
+
+/* Si es remitente ("Yo"), alineamos a la derecha */
+.product-card--remitente {
+  justify-content: flex-end;
+}
+
+/* La burbuja del mensaje */
+.product-card {
+  max-width: 75%;
+  background-color: #ffffff; /* Blanco para mensajes recibidos */
+  padding: 8px 12px 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13);
+}
+
+/* Color verde WhatsApp para los mensajes propios */
+.product-card--remitente .product-card {
+  background-color: #d9fdd3;
+}
+
+/* Nombre del autor */
+.product-card h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #53bdeb; /* Color azulado común para nombres en grupos */
+  margin-bottom: 2px;
+}
+
+/* En mensajes propios normalmente no se muestra el nombre o se atenúa */
+.product-card--remitente .product-card h2 {
+  display: none; /* Oculta 'Yo' para que se vea más natural */
+}
+
+/* Texto del mensaje */
+.product-card p {
+  font-size: 0.95rem;
+  color: #111b21;
+  margin-bottom: 4px;
+}
+
+/* Metadata: Hora y estado del mensaje */
+.hora {
+  font-size: 0.7rem;
+  color: #667781;
+}
+
+/* Ícono o texto de estatus */
+.estatus {
+  margin-left: 4px;
+  font-size: 0.65rem;
+  text-transform: capitalize;
+}
+
+/* Si el estado es 'visto', se muestra con el celeste del doble check */
+.product-card--remitente .estatus {
+  color: #53bdeb;
+}
+
+.message-meta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+}
