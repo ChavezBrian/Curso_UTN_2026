@@ -1,0 +1,100 @@
+.generador-wrapper {
+  max-width: 420px;
+  margin: 40px auto;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Formulario */
+.formulario-tarjeta {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-tarjeta h2 {
+  margin: 0 0 16px 0;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.campo-grupo label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.campo-grupo input {
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.campo-grupo input:focus {
+  border-color: #3b82f6;
+}
+
+.btn-guardar {
+  width: 100%;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.btn-guardar:hover {
+  background-color: #2563eb;
+}
+
+/* Tarjeta de presentación (preview en vivo) */
+.tarjeta-presentacion {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  border-left: 5px solid #3b82f6;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tarjeta-nombre {
+  margin: 0 0 6px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.tarjeta-profesion {
+  margin: 0 0 14px 0;
+  font-size: 0.95rem;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tarjeta-email {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}

@@ -1,0 +1,85 @@
+.buscador-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  font-family: system-ui, -apple-system, sans-serif;
+  text-align: center;
+}
+
+.buscador-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.buscador-input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+.buscador-input:focus {
+  border-color: #3b82f6;
+}
+
+.btn-buscar {
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-buscar:hover {
+  background-color: #2563eb;
+}
+
+.estado-box {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}
+
+.cargando-msg {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.error-msg {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.btn-reintentar {
+  margin-top: 10px;
+  padding: 6px 14px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-reintentar:hover {
+  background-color: #dc2626;
+}
+
+.usuario-info h3 {
+  margin: 0 0 6px 0;
+  color: #1e293b;
+}
+
+.usuario-info p {
+  margin: 0;
+  color: #475569;
+}

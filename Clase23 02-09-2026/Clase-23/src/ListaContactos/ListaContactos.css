@@ -1,0 +1,66 @@
+/* Contenedor tipo lista de chat */
+.chat-list {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 0 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Tarjeta individual de contacto */
+.contacto-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contacto-card:hover {
+  background-color: #f8fafc;
+}
+
+/* Encabezado: foto redonda y nombre */
+.contacto-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.contacto-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e2e8f0;
+}
+
+.contacto-nombre {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+/* Mensajes no leídos (badge) */
+.badge-no-leidos {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0284c7;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+/* Texto del último mensaje y fecha */
+.ultimo-mensaje {
+  margin: 6px 0 4px 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.fecha-mensaje {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-align: right;
+}

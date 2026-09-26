@@ -1,0 +1,62 @@
+.counter-wrapper {
+  text-align: center;
+  margin: 30px auto;
+  font-family: sans-serif;
+}
+
+/* Botón comprar cuando el contador está en 0 */
+.btn-comprar {
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  background-color: #22c55e;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background-color: #16a34a;
+}
+
+/* Controles (+, -, número) */
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.counter-container span {
+  font-size: 2rem;
+  font-weight: bold;
+  min-width: 40px;
+  text-align: center;
+}
+
+.counter-container button {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.counter-container button:hover {
+  background-color: #e0e0e0;
+}
+
+.counter-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.limite-msg {
+  color: red;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
