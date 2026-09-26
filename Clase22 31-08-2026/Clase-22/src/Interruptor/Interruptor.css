@@ -1,0 +1,49 @@
+.contenedor-luz {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fondos y colores condicionales según el estado */
+.contenedor-luz.dia {
+  background-color: #fef08a; /* Amarillo */
+  color: #1e293b;
+}
+
+.contenedor-luz.noche {
+  background-color: #0f172a; /* Negro / azul noche */
+  color: #f8fafc;
+}
+
+/* Emoji representativo */
+.icono-luz {
+  font-size: 5rem;
+  margin: 0;
+  user-select: none;
+}
+
+/* Botón interruptor */
+.btn-interruptor {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 2px solid currentColor;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.btn-interruptor:hover {
+  transform: scale(1.05);
+}
+
+.btn-interruptor:active {
+  transform: scale(0.95);
+}
